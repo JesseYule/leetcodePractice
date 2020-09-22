@@ -2,13 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c8de1383-af36-4dde-9d3d-a9c1d5f6f432" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/heap/215.kth-largest-element-in-an-array.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/heap/264.ugly-number-ii.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/heap/313.super-ugly-number.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/heap/347.top-k-frequent-elements.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tree/101.symmetric-tree.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/graph/133.clone-graph.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/graph/207.course-schedule.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tree/104.maximum-depth-of-binary-tree.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tree/107.binary-tree-level-order-traversal-ii.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tree/110.balanced-binary-tree.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tree/111.minimum-depth-of-binary-tree.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tree/100.same-tree.py" beforeDir="false" afterPath="$PROJECT_DIR$/tree/100.same-tree.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tree/101.symmetric-tree.py" beforeDir="false" afterPath="$PROJECT_DIR$/tree/101.symmetric-tree.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -68,26 +69,7 @@
     <select />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/tree/101.symmetric-tree.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="279">
-              <caret line="9" selection-start-line="9" selection-end-line="26" selection-end-column="15" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/tree/100.same-tree.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="633">
-              <caret line="32" column="24" lean-forward="true" selection-start-line="32" selection-start-column="24" selection-end-line="32" selection-end-column="24" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -102,7 +84,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/array/two-sum.py" />
         <option value="$PROJECT_DIR$/array/reverse-integer.py" />
         <option value="$PROJECT_DIR$/array/7.reverse-integer.py" />
         <option value="$PROJECT_DIR$/array/9.palindrome-number.py" />
@@ -148,14 +129,20 @@
         <option value="$PROJECT_DIR$/tree/450.delete-node-in-a-bst.py" />
         <option value="$PROJECT_DIR$/tree/100.same-tree.py" />
         <option value="$PROJECT_DIR$/tree/101.symmetric-tree.py" />
+        <option value="$PROJECT_DIR$/tree/104.maximum-depth-of-binary-tree.py" />
+        <option value="$PROJECT_DIR$/tree/107.binary-tree-level-order-traversal-ii.py" />
+        <option value="$PROJECT_DIR$/tree/110.balanced-binary-tree.py" />
+        <option value="$PROJECT_DIR$/tree/111.minimum-depth-of-binary-tree.py" />
+        <option value="$PROJECT_DIR$/graph/133.clone-graph.py" />
+        <option value="$PROJECT_DIR$/graph/207.course-schedule.py" />
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds">
-    <option name="x" value="2644" />
+  <component name="ProjectFrameBounds" fullScreen="true">
+    <option name="x" value="-5" />
     <option name="y" value="23" />
-    <option name="width" value="2560" />
-    <option name="height" value="1417" />
+    <option name="width" value="1440" />
+    <option name="height" value="805" />
   </component>
   <component name="ProjectLevelVcsManager">
     <ConfirmationsSetting value="2" id="Add" />
@@ -171,6 +158,11 @@
             <path>
               <item name="leetcodePractice" type="b2602c69:ProjectViewProjectNode" />
               <item name="leetcodePractice" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="leetcodePractice" type="b2602c69:ProjectViewProjectNode" />
+              <item name="leetcodePractice" type="462c0819:PsiDirectoryNode" />
+              <item name="graph" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="leetcodePractice" type="b2602c69:ProjectViewProjectNode" />
@@ -344,18 +336,17 @@
       <workItem from="1599307695110" duration="1098000" />
       <workItem from="1600499770729" duration="85000" />
       <workItem from="1600570638758" duration="8216000" />
-      <workItem from="1600649021452" duration="18110000" />
+      <workItem from="1600649021452" duration="34473000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="99933000" />
+    <option name="totallyTimeSpent" value="116296000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="2644" y="23" width="2560" height="1417" extended-state="0" />
-    <editor active="true" />
+    <frame x="2579" y="23" width="2115" height="1417" extended-state="0" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.112787925" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.13314037" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -553,13 +544,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/graph/997.find-the-town-judge.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1147">
-          <caret line="37" selection-start-line="37" selection-end-line="37" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/graph/1042.flower-planting-with-no-adjacent.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="124">
@@ -708,17 +692,66 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/tree/100.same-tree.py">
+    <entry file="file://$PROJECT_DIR$/tree/101.symmetric-tree.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="633">
-          <caret line="32" column="24" lean-forward="true" selection-start-line="32" selection-start-column="24" selection-end-line="32" selection-end-column="24" />
+        <state relative-caret-position="310">
+          <caret line="10" selection-start-line="10" selection-end-line="25" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/tree/101.symmetric-tree.py">
+    <entry file="file://$PROJECT_DIR$/tree/100.same-tree.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="279">
-          <caret line="9" selection-start-line="9" selection-end-line="26" selection-end-column="15" />
+        <state relative-caret-position="604">
+          <caret line="27" lean-forward="true" selection-start-line="27" selection-end-line="36" selection-end-column="88" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tree/107.binary-tree-level-order-traversal-ii.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="512">
+          <caret line="53" column="22" selection-start-line="53" selection-start-column="12" selection-end-line="53" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tree/110.balanced-binary-tree.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="31">
+          <caret line="1" column="4" selection-start-line="1" selection-start-column="4" selection-end-line="1" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tree/111.minimum-depth-of-binary-tree.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="451">
+          <caret line="50" selection-start-line="50" selection-end-line="50" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tree/104.maximum-depth-of-binary-tree.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="434">
+          <caret line="14" selection-start-line="14" selection-end-line="16" selection-end-column="53" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/graph/997.find-the-town-judge.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1147">
+          <caret line="37" selection-start-line="37" selection-end-line="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/graph/133.clone-graph.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="96">
+          <caret line="68" column="50" selection-start-line="68" selection-start-column="50" selection-end-line="68" selection-end-column="50" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/graph/207.course-schedule.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="248">
+          <caret line="8" column="20" lean-forward="true" selection-start-line="8" selection-start-column="20" selection-end-line="8" selection-end-column="20" />
         </state>
       </provider>
     </entry>

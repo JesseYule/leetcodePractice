@@ -6,27 +6,20 @@ class TreeNode:
         self.right = None
 
 
-def isSymmetric(root):
-    # 前面判断空与非空的情况，只有两个都非空才需要递归分析
-    p1 = root
-    q1 = root
+class Solution:
+    def isSymmetric(self, root: TreeNode) -> bool:
+        if not root:
+            return True
+        return self.isSymmetricTree(root.left, root.right)
 
-    def analyse(p, q):
-        if p is None and q is None:
-            pass  # 子节点都为空只能说达到了数的最低端，要完整分析完整棵树
-        elif p is None or q is None:  # 因为上面已经排除了两个都是None，所以这里只能是其中一个为None
-            return False
-        elif p.val != q.val:
-            return False
-        else:  # 如果来到这里，就证明两个节点的value存在且相等，所以继续分析子节点
-            analyse(p.left, q.right)  # 对子节点而已，因为是镜像分析，所以左节点对应右节点
-            analyse(p.right, q.left)
+    def isSymmetricTree(self, left, right):
 
-    analyse(p1, q1)
-
-    return True
-
-
-
-p1 = TreeNode{val: 2, left: TreeNode{val: 3, left: None, right: None}, right: TreeNode{val: 4, left: None, right: None}}
-q1 = TreeNode{val: 2, left: TreeNode{val: 4, left: None, right: None}, right: TreeNode{val: 3, left: None, right: None}}
+        # 一定要注意一点，这里的函数会递归调用
+        if left is None and right is None:
+            return True  # 这里要return true，不是最终的return，而是不断地递归return，这里的true是要告诉上一轮递归，一切情况正常
+        if left is None or right is None:
+            return False  # 一个为空
+        if left.val != right.val:
+            return False  # 值不相等 ！！
+        # 一下是函数的最终return，也是函数的不断递归，只有函数所有的递归都return true，最终函数才会return true，这里相当于把true一轮轮传递回去
+        return self.isSymmetricTree(left.left, right.right) and self.isSymmetricTree(left.right, right.left)
